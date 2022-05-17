@@ -255,7 +255,7 @@ namespace ET
             
             Log.Warning($"GateAddress :  {r2CLogin.GateAddress}");
             Session gateSession = zoneScene.GetComponent<NetKcpComponent>().Create(NetworkHelper.ToIPEndPoint(r2CLogin.GateAddress));
-                gateSession.AddComponent<PingComponent>();
+            gateSession.AddComponent<PingComponent>();
             zoneScene.GetComponent<SessionComponent>().Session = gateSession;
 				
             // 2. 开始连接Gate
@@ -264,7 +264,7 @@ namespace ET
             try
             {
                 long accountId = zoneScene.GetComponent<AccountInfoComponent>().AccountId;
-                 g2CLoginGate = (G2C_LoginGameGate)await gateSession.Call(new C2G_LoginGameGate() { Key = r2CLogin.GateSessionKey, Account = accountId,RoleId = currentRoleId});
+                g2CLoginGate = (G2C_LoginGameGate)await gateSession.Call(new C2G_LoginGameGate() { Key = r2CLogin.GateSessionKey, Account = accountId,RoleId = currentRoleId});
                 
             }
             catch (Exception e)

@@ -58,7 +58,7 @@
                 }
                 
                 player.PlayerState = PlayerState.Disconnect;
-                player.DomainScene().GetComponent<PlayerComponent>()?.Remove(player.AccountId);
+                player.DomainScene().GetComponent<PlayerComponent>()?.Remove(player.Id);
                 player?.Dispose();
                 await TimerComponent.Instance.WaitAsync(300);
             }
