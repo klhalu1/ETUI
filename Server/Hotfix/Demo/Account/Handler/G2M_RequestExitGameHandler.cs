@@ -7,7 +7,8 @@ namespace ET
         protected override async ETTask Run(Unit unit, G2M_RequestExitGame request, M2G_RequestExitGame response, Action reply)
         {
             //TODD  保存玩家数据到数据库，执行相关下线操作
-            
+            Log.Debug("玩家下线保存数据");
+            unit.GetComponent<UnitDBSaveComponent>()?.SaveChange();
             reply();
 
             //正式释放Unit
