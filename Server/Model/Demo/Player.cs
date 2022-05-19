@@ -9,7 +9,7 @@
 	}
 	
 	
-	
+	/*
 	[ObjectSystem]
 	public class PlayerSystem : AwakeSystem<Player, long,long>
 	{
@@ -19,7 +19,7 @@
 			self.UnitId = roleId;
 		}
 	}
-
+*/
 
 	public sealed class Player : Entity,IAwake<string>, IAwake<long,long>
 	{

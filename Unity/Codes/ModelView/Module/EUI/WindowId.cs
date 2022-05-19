@@ -10,5 +10,7 @@
         WindowID_Helper,   //提示界面
         WindowID_Server,   //区服列表
         WindowID_Roles,    // 角色列表
+        WindowID_Main,     //主界面
+        WindowID_Loading,  //加载界面
     }
 }

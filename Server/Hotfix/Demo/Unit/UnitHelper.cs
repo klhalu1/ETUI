@@ -24,7 +24,7 @@ namespace ET
             unitInfo.ForwardX = forward.x;
             unitInfo.ForwardY = forward.y;
             unitInfo.ForwardZ = forward.z;
-
+/*
             MoveComponent moveComponent = unit.GetComponent<MoveComponent>();
             if (moveComponent != null)
             {
@@ -40,7 +40,7 @@ namespace ET
                     }
                 }
             }
-
+*/          
             foreach ((int key, long value) in nc.NumericDic)
             {
                 unitInfo.Ks.Add(key);

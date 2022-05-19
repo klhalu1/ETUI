@@ -93,23 +93,23 @@ namespace ET
 					try
 					{
 						
-						GateMapComponent gateMapComponent = player.AddComponent<GateMapComponent>();
-						gateMapComponent.Scene = await SceneFactory.Create(gateMapComponent, "GateMap", SceneType.Map);
+						//GateMapComponent gateMapComponent = player.AddComponent<GateMapComponent>();
+						//gateMapComponent.Scene = await SceneFactory.Create(gateMapComponent, "GateMap", SceneType.Map);
 						
-						Unit unit = UnitFactory.Create(gateMapComponent.Scene, player.Id, UnitType.Player);
-						unit.AddComponent<UnitGateComponent, long>(session.InstanceId);
-						long unitId = unit.Id;
-						
-						
-						StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Map1");
-						await TransferHelper.Transfer(unit, startSceneConfig.InstanceId, startSceneConfig.Name);
-						
-						
-						player.UnitId      = unitId;
-						response.MyId      = unitId;
+						//Unit unit = UnitFactory.Create(gateMapComponent.Scene, player.Id, UnitType.Player);
+						//unit.AddComponent<UnitGateComponent, long>(session.InstanceId);
+						(bool isNewPlayer, Unit unit) = await UnitHelper.LoadUnit(player);
+						unit.AddComponent<UnitGateComponent, long>(player.InstanceId);
+						await UnitHelper.InitUnit(unit, isNewPlayer);
+						//long unitId = unit.Id;
+						//player.UnitId      = unitId;
+						response.MyId      =  unit.Id;
 						
 						reply();
 						
+						StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Game");
+						await TransferHelper.Transfer(unit, startSceneConfig.InstanceId, startSceneConfig.Name);
+
 						SessionStateComponent SessionStateComponent = session.GetComponent<SessionStateComponent>();
 						if (SessionStateComponent == null)
 						{

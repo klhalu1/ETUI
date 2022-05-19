@@ -130,6 +130,10 @@ namespace ET
 					Log.Error(errorCode.ToString());
 					return;
 				}
+				
+				self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Main);
+				self.ZoneScene().GetComponent<UIComponent>().HideWindow(WindowID.WindowID_Loading);
+				self.ZoneScene().GetComponent<UIComponent>().HideWindow(WindowID.WindowID_Roles);
 			}
 			catch (Exception e)
 			{

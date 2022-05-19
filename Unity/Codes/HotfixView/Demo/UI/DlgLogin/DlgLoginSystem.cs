@@ -17,7 +17,8 @@ namespace ET
 
 		public static void ShowWindow(this DlgLogin self, Entity contextData = null)
 		{
-			
+			self.View.E_AccountInputField.text = "Cs123456";
+			self.View.E_PasswordInputField.text = "Cs123456";
 		}
 		
 		public static async ETTask OnLoginClickHandler(this DlgLogin self)

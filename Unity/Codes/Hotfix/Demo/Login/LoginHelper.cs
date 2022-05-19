@@ -1,6 +1,7 @@
 using System;
 using System.Security.Cryptography;
 using System.Collections.Generic;
+using ET.WaitType;
 
 namespace ET
 {
@@ -302,7 +303,7 @@ namespace ET
             }
             
             Log.Debug("角色进入游戏成功!!!!");
-            
+            await zoneScene.GetComponent<ObjectWait>().Wait<Wait_SceneChangeFinish>();
             return ErrorCode.ERR_Success;
         }
         
