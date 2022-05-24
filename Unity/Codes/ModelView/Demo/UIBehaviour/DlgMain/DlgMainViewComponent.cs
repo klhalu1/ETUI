@@ -6,7 +6,7 @@ namespace ET
 	[EnableMethod]
 	public  class DlgMainViewComponent : Entity,IAwake,IDestroy 
 	{
-		public UnityEngine.UI.Button E_RoleButton
+		public UnityEngine.UI.Button E_SpaceShipButton
      	{
      		get
      		{
@@ -15,15 +15,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_RoleButton == null )
+     			if( this.m_E_SpaceShipButton == null )
      			{
-		    		this.m_E_RoleButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Role");
+		    		this.m_E_SpaceShipButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_SpaceShip");
      			}
-     			return this.m_E_RoleButton;
+     			return this.m_E_SpaceShipButton;
      		}
      	}
 
-		public UnityEngine.UI.Image E_RoleImage
+		public UnityEngine.UI.Image E_SpaceShipImage
      	{
      		get
      		{
@@ -32,15 +32,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_RoleImage == null )
+     			if( this.m_E_SpaceShipImage == null )
      			{
-		    		this.m_E_RoleImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Role");
+		    		this.m_E_SpaceShipImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_SpaceShip");
      			}
-     			return this.m_E_RoleImage;
+     			return this.m_E_SpaceShipImage;
      		}
      	}
 
-		public UnityEngine.UI.Button E_BagButton
+		public UnityEngine.UI.Button E_EquipButton
      	{
      		get
      		{
@@ -49,15 +49,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_BagButton == null )
+     			if( this.m_E_EquipButton == null )
      			{
-		    		this.m_E_BagButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Bag");
+		    		this.m_E_EquipButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Equip");
      			}
-     			return this.m_E_BagButton;
+     			return this.m_E_EquipButton;
      		}
      	}
 
-		public UnityEngine.UI.Image E_BagImage
+		public UnityEngine.UI.Image E_EquipImage
      	{
      		get
      		{
@@ -66,15 +66,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_BagImage == null )
+     			if( this.m_E_EquipImage == null )
      			{
-		    		this.m_E_BagImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Bag");
+		    		this.m_E_EquipImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Equip");
      			}
-     			return this.m_E_BagImage;
+     			return this.m_E_EquipImage;
      		}
      	}
 
-		public UnityEngine.UI.Button E_BattleButton
+		public UnityEngine.UI.Button E_SpaceButton
      	{
      		get
      		{
@@ -83,15 +83,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_BattleButton == null )
+     			if( this.m_E_SpaceButton == null )
      			{
-		    		this.m_E_BattleButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Battle");
+		    		this.m_E_SpaceButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Space");
      			}
-     			return this.m_E_BattleButton;
+     			return this.m_E_SpaceButton;
      		}
      	}
 
-		public UnityEngine.UI.Image E_BattleImage
+		public UnityEngine.UI.Image E_SpaceImage
      	{
      		get
      		{
@@ -100,15 +100,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_BattleImage == null )
+     			if( this.m_E_SpaceImage == null )
      			{
-		    		this.m_E_BattleImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Battle");
+		    		this.m_E_SpaceImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Space");
      			}
-     			return this.m_E_BattleImage;
+     			return this.m_E_SpaceImage;
      		}
      	}
 
-		public UnityEngine.UI.Button E_MakeButton
+		public UnityEngine.UI.Button E_InfoButton
      	{
      		get
      		{
@@ -117,15 +117,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_MakeButton == null )
+     			if( this.m_E_InfoButton == null )
      			{
-		    		this.m_E_MakeButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Make");
+		    		this.m_E_InfoButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Info");
      			}
-     			return this.m_E_MakeButton;
+     			return this.m_E_InfoButton;
      		}
      	}
 
-		public UnityEngine.UI.Image E_MakeImage
+		public UnityEngine.UI.Image E_InfoImage
      	{
      		get
      		{
@@ -134,15 +134,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_MakeImage == null )
+     			if( this.m_E_InfoImage == null )
      			{
-		    		this.m_E_MakeImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Make");
+		    		this.m_E_InfoImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Info");
      			}
-     			return this.m_E_MakeImage;
+     			return this.m_E_InfoImage;
      		}
      	}
 
-		public UnityEngine.UI.Button E_TaskButton
+		public UnityEngine.UI.Button E_ShopButton
      	{
      		get
      		{
@@ -151,15 +151,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_TaskButton == null )
+     			if( this.m_E_ShopButton == null )
      			{
-		    		this.m_E_TaskButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Task");
+		    		this.m_E_ShopButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Shop");
      			}
-     			return this.m_E_TaskButton;
+     			return this.m_E_ShopButton;
      		}
      	}
 
-		public UnityEngine.UI.Image E_TaskImage
+		public UnityEngine.UI.Image E_ShopImage
      	{
      		get
      		{
@@ -168,11 +168,11 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_TaskImage == null )
+     			if( this.m_E_ShopImage == null )
      			{
-		    		this.m_E_TaskImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Task");
+		    		this.m_E_ShopImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_Shop");
      			}
-     			return this.m_E_TaskImage;
+     			return this.m_E_ShopImage;
      		}
      	}
 
@@ -229,32 +229,32 @@ namespace ET
 
 		public void DestroyWidget()
 		{
-			this.m_E_RoleButton = null;
-			this.m_E_RoleImage = null;
-			this.m_E_BagButton = null;
-			this.m_E_BagImage = null;
-			this.m_E_BattleButton = null;
-			this.m_E_BattleImage = null;
-			this.m_E_MakeButton = null;
-			this.m_E_MakeImage = null;
-			this.m_E_TaskButton = null;
-			this.m_E_TaskImage = null;
+			this.m_E_SpaceShipButton = null;
+			this.m_E_SpaceShipImage = null;
+			this.m_E_EquipButton = null;
+			this.m_E_EquipImage = null;
+			this.m_E_SpaceButton = null;
+			this.m_E_SpaceImage = null;
+			this.m_E_InfoButton = null;
+			this.m_E_InfoImage = null;
+			this.m_E_ShopButton = null;
+			this.m_E_ShopImage = null;
 			this.m_E_RoleLevelText = null;
 			this.m_E_GoldText = null;
 			this.m_E_ExpText = null;
 			this.uiTransform = null;
 		}
 
-		private UnityEngine.UI.Button m_E_RoleButton = null;
-		private UnityEngine.UI.Image m_E_RoleImage = null;
-		private UnityEngine.UI.Button m_E_BagButton = null;
-		private UnityEngine.UI.Image m_E_BagImage = null;
-		private UnityEngine.UI.Button m_E_BattleButton = null;
-		private UnityEngine.UI.Image m_E_BattleImage = null;
-		private UnityEngine.UI.Button m_E_MakeButton = null;
-		private UnityEngine.UI.Image m_E_MakeImage = null;
-		private UnityEngine.UI.Button m_E_TaskButton = null;
-		private UnityEngine.UI.Image m_E_TaskImage = null;
+		private UnityEngine.UI.Button m_E_SpaceShipButton = null;
+		private UnityEngine.UI.Image m_E_SpaceShipImage = null;
+		private UnityEngine.UI.Button m_E_EquipButton = null;
+		private UnityEngine.UI.Image m_E_EquipImage = null;
+		private UnityEngine.UI.Button m_E_SpaceButton = null;
+		private UnityEngine.UI.Image m_E_SpaceImage = null;
+		private UnityEngine.UI.Button m_E_InfoButton = null;
+		private UnityEngine.UI.Image m_E_InfoImage = null;
+		private UnityEngine.UI.Button m_E_ShopButton = null;
+		private UnityEngine.UI.Image m_E_ShopImage = null;
 		private UnityEngine.UI.Text m_E_RoleLevelText = null;
 		private UnityEngine.UI.Text m_E_GoldText = null;
 		private UnityEngine.UI.Text m_E_ExpText = null;
