@@ -7,6 +7,7 @@ namespace ET
     {
         protected override void Run(object changePosition)
         {
+            /*
             EventType.ChangePosition args = changePosition as EventType.ChangePosition;
             Vector3 oldPos = args.OldPos.Value;
             Unit unit = args.Unit;
@@ -26,6 +27,7 @@ namespace ET
             }
 
             unit.Domain.GetComponent<AOIManagerComponent>().Move(aoiEntity, newCellX, newCellY);
+            */
         }
     }
 }

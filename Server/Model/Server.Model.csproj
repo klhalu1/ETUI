@@ -49,12 +49,6 @@
     <Compile Include="..\..\Unity\Assets\Mono\Core\**\*.cs">
       <Link>Core\%(RecursiveDir)%(FileName)%(Extension)</Link>
     </Compile>
-    
-
-    <Compile Include="..\..\Unity\Codes\Model\Demo\Move\MoveComponent.cs">
-      <Link>Demo\Move\MoveComponent.cs</Link>
-    </Compile>
-    
 
     <Compile Include="..\..\Unity\Codes\Model\Demo\TimerType.cs">
       <Link>Demo\TimerType.cs</Link>
@@ -82,6 +76,18 @@
     </Compile>
     <Compile Include="..\..\Unity\Codes\Model\Module\Actor\IActorMessage.cs">
       <Link>Module\Actor\IActorMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Codes\Model\SpaceArena\EquipmentsComponent\EquipmentsComponent.cs">
+      <Link>SpaceArena\Equipment\EquipmentsComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Codes\Model\SpaceArena\EquipmentsComponent\EquipOp.cs">
+      <Link>SpaceArena\Equipment\EquipOp.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Item\Item.cs">
+      <Link>SpaceArena\Item\Item.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Item\ItemType.cs">
+      <Link>SpaceArena\Item\ItemType.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

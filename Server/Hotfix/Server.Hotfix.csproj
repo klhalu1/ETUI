@@ -19,9 +19,6 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\Unity\Codes\Hotfix\Demo\Move\MoveComponentSystem.cs">
-      <Link>Demo\Move\MoveComponentSystem.cs</Link>
-    </Compile>
     <Compile Include="..\..\Unity\Codes\Hotfix\Demo\Role\RoleInfoSystem.cs">
       <Link>Demo\Role\RoleInfoSystem.cs</Link>
     </Compile>
@@ -53,5 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Demo\Numeric\Handler" />
+    <Folder Include="SpaceArena\Equipment\Event" />
+    <Folder Include="SpaceArena\Equipment\Handler" />
+    <Folder Include="SpaceArena\SpaceShip" />
   </ItemGroup>
 </Project>

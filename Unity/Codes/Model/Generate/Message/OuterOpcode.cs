@@ -54,5 +54,10 @@ namespace ET
 		 public const ushort C2G_EnterGame = 10051;
 		 public const ushort G2C_EnterGame = 10052;
 		 public const ushort M2C_NoticeUnitNumeric = 10053;
+		 public const ushort AttributeEntryProto = 10054;
+		 public const ushort EquipInfoProto = 10055;
+		 public const ushort ItemInfo = 10056;
+		 public const ushort C2M_EnterArena = 10057;
+		 public const ushort M2C_EnterArena = 10058;
 	}
 }

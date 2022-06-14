@@ -23,7 +23,7 @@ namespace ET
         /// <param name="scene"></param>
         /// <param name="unitId"></param>
         /// <returns></returns>
-        public static async ETTask<Unit> GetUnitCache(Scene scene, long unitId)
+        public static async ETTask<T> GetUnitCache<T>(Scene scene, long unitId) where T : Entity,IUnitCache
         {
             long instanceId = StartSceneConfigCategory.Instance.GetUnitCacheConfig(unitId).InstanceId;
             Other2UnitCache_GetUnit message = new Other2UnitCache_GetUnit() { UnitId = unitId };
@@ -32,9 +32,9 @@ namespace ET
             {
                 return null;
             }
-
-            int indexOf = queryUnit.ComponentNameList.IndexOf(nameof (Unit));
-            Unit unit = queryUnit.EntityList[indexOf] as Unit;
+            
+            int indexOf = queryUnit.ComponentNameList.IndexOf(typeof (T).Name);
+            T unit = queryUnit.EntityList[indexOf] as T;
             if (unit == null)
             {
                 return null;
@@ -43,7 +43,7 @@ namespace ET
             scene.AddChild(unit);
             foreach (Entity entity in queryUnit.EntityList)
             {
-                if (entity == null || entity is Unit)
+                if (entity == null || entity is T)
                 {
                     continue;
                 }
@@ -87,7 +87,7 @@ namespace ET
         /// 保存Unit及Unit身上组件到缓存服及数据库中
         /// </summary>
         /// <param name="unit"></param>
-        public static void AddOrUpdateUnitAllCache(Unit unit)
+        public static void AddOrUpdateUnitAllCache(Entity unit)
         {
             Other2UnitCache_AddOrUpateUnit message = new Other2UnitCache_AddOrUpateUnit() { UnitId = unit.Id, };
             message.EntityTypes.Add(unit.GetType().FullName);

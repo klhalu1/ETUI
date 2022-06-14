@@ -63,15 +63,12 @@ message UnitInfo
 	int64 UnitId = 1;
 	int32 ConfigId = 2;
 	int32 Type = 3;
-	float X = 4;
-	float Y = 5;
-	float Z = 6;
-	float ForwardX = 7;
-	float ForwardY = 8;
-	float ForwardZ = 9;
-	repeated int32 Ks = 10;
-	repeated int64 Vs = 11;
-	MoveInfo MoveInfo = 12;
+	int32 Level = 4;
+	int64 Exp = 5;
+	int64 Gold = 6;
+	int64 Money = 7;
+	repeated int32 Ks = 8;
+	repeated int64 Vs = 9;
 }
 
 message M2C_CreateUnits // IActorMessage
@@ -442,4 +439,40 @@ message M2C_NoticeUnitNumeric // IActorMessage
 	int64 UnitId = 1;
 	int32 NumericType = 2;
 	int64 NewValue = 4;
+}
+
+message AttributeEntryProto
+{
+	int64 Id = 1;
+	int32 Key = 2;
+	int64 Value = 3;
+	int32 EntryType = 4;
+}
+
+message EquipInfoProto
+{
+	int64 Id = 1;
+	int32 Score = 2;
+	repeated AttributeEntryProto AttributeEntryProtoList = 3;
+}
+
+message ItemInfo
+{
+	int64 ItemUid = 1;
+	int32 ItemConfigId = 2;
+	int32 ItemQuality = 3;
+	EquipInfoProto EquipInfo = 4;
+}
+
+//ResponseType M2C_EnterArena
+message C2M_EnterArena // IActorLocationRequest
+{
+	int32 RpcId = 1;
+}
+
+message M2C_EnterArena // IActorLocationResponse
+{
+	int32 RpcId = 1;
+	int32 Error = 2;
+	string Message = 3;
 }

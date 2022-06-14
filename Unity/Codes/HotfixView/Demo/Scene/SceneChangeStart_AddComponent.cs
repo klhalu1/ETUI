@@ -29,7 +29,7 @@ namespace ET
             }
 			
 
-            currentScene.AddComponent<OperaComponent>();
+            //currentScene.AddComponent<OperaComponent>();
         }
     }
 }

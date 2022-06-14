@@ -8,7 +8,7 @@ namespace ET
 	{
 		protected override async ETTask Run(Unit unit, C2M_Stop message)
 		{
-			unit.Stop(0);
+			//unit.Stop(0);
 			await ETTask.CompletedTask;
 		}
 	}

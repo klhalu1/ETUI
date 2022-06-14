@@ -14,7 +14,7 @@ namespace ET
             {
                 if (request.ComponentNameList.Count == 0)
                 {
-                    dictionary.Add(nameof(Unit),null);
+                    //dictionary.Add(nameof(Unit),null);
                     foreach (string s in unitCacheComponent.UnitCacheKeyList)
                     {
                         dictionary.Add(s,null);

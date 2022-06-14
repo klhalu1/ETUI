@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ET
 {
-    public sealed class Unit: Entity, IAwake<int>, IAddComponent, IGetComponent
+    public sealed class Unit: Entity, IAwake<int>, IAddComponent, IGetComponent,IUnitCache
     {
         public int ConfigId; //配置表id
 
@@ -13,7 +13,7 @@ namespace ET
 
         [BsonIgnore]
         public UnitConfig Config => UnitConfigCategory.Instance.Get(this.ConfigId);
-
+    /*
         private Vector3 position; //坐标
 
         public Vector3 Position
@@ -46,5 +46,6 @@ namespace ET
                 Game.EventSystem.PublishClass(EventType.ChangeRotation.Instance);
             }
         }
+    */
     }
 }

@@ -135,31 +135,22 @@ namespace ET
 		public int Type { get; set; }
 
 		[ProtoMember(4)]
-		public float X { get; set; }
+		public int Level { get; set; }
 
 		[ProtoMember(5)]
-		public float Y { get; set; }
+		public long Exp { get; set; }
 
 		[ProtoMember(6)]
-		public float Z { get; set; }
+		public long Gold { get; set; }
 
 		[ProtoMember(7)]
-		public float ForwardX { get; set; }
+		public long Money { get; set; }
 
 		[ProtoMember(8)]
-		public float ForwardY { get; set; }
-
-		[ProtoMember(9)]
-		public float ForwardZ { get; set; }
-
-		[ProtoMember(10)]
 		public List<int> Ks = new List<int>();
 
-		[ProtoMember(11)]
+		[ProtoMember(9)]
 		public List<long> Vs = new List<long>();
-
-		[ProtoMember(12)]
-		public MoveInfo MoveInfo { get; set; }
 
 	}
 
@@ -887,6 +878,82 @@ namespace ET
 
 		[ProtoMember(4)]
 		public long NewValue { get; set; }
+
+	}
+
+	[Message(OuterOpcode.AttributeEntryProto)]
+	[ProtoContract]
+	public partial class AttributeEntryProto: Object
+	{
+		[ProtoMember(1)]
+		public long Id { get; set; }
+
+		[ProtoMember(2)]
+		public int Key { get; set; }
+
+		[ProtoMember(3)]
+		public long Value { get; set; }
+
+		[ProtoMember(4)]
+		public int EntryType { get; set; }
+
+	}
+
+	[Message(OuterOpcode.EquipInfoProto)]
+	[ProtoContract]
+	public partial class EquipInfoProto: Object
+	{
+		[ProtoMember(1)]
+		public long Id { get; set; }
+
+		[ProtoMember(2)]
+		public int Score { get; set; }
+
+		[ProtoMember(3)]
+		public List<AttributeEntryProto> AttributeEntryProtoList = new List<AttributeEntryProto>();
+
+	}
+
+	[Message(OuterOpcode.ItemInfo)]
+	[ProtoContract]
+	public partial class ItemInfo: Object
+	{
+		[ProtoMember(1)]
+		public long ItemUid { get; set; }
+
+		[ProtoMember(2)]
+		public int ItemConfigId { get; set; }
+
+		[ProtoMember(3)]
+		public int ItemQuality { get; set; }
+
+		[ProtoMember(4)]
+		public EquipInfoProto EquipInfo { get; set; }
+
+	}
+
+	[ResponseType(nameof(M2C_EnterArena))]
+	[Message(OuterOpcode.C2M_EnterArena)]
+	[ProtoContract]
+	public partial class C2M_EnterArena: Object, IActorLocationRequest
+	{
+		[ProtoMember(1)]
+		public int RpcId { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_EnterArena)]
+	[ProtoContract]
+	public partial class M2C_EnterArena: Object, IActorLocationResponse
+	{
+		[ProtoMember(1)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(2)]
+		public int Error { get; set; }
+
+		[ProtoMember(3)]
+		public string Message { get; set; }
 
 	}
 

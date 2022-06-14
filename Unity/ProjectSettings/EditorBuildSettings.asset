@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: f03f876096ecd4ca7ac75e4b4f6f8fd6
+  - enabled: 1
+    path: Assets/Scenes/SpaceArena.unity
+    guid: fc345a3f9487f47a98860af0951bd665
   m_configObjects: {}

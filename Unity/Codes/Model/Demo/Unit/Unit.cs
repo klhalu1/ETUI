@@ -10,7 +10,7 @@ namespace ET
 
         [BsonIgnore]
         public UnitConfig Config => UnitConfigCategory.Instance.Get(this.ConfigId);
-
+    /*
         private WrapVector3 position = new WrapVector3(); //坐标
 
         public Vector3 Position
@@ -44,5 +44,6 @@ namespace ET
                 Game.EventSystem.PublishClass(EventType.ChangeRotation.Instance);
             }
         }
+    */
     }
 }

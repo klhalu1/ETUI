@@ -41,23 +41,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainOcean.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainPrefabSpawner.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainHeightmap.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainSine.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainCollider.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainCube.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainSimplex.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainAreas.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainFeature.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainSharedMaterial.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainPlanetMaterial.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainOceanMaterial.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainPlanet.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainObject.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainQuad.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrain.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainCube.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainOceanMaterial.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainTopology.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainSharedMaterial.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainFeature.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainOcean.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainCollider.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainAreas.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainPrefabSpawner.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainHeightmap.cs" />
+     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Scripts\SgtTerrainPlanetMaterial.cs" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Shaders\TerrainPlanet.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\Required\Shaders\TerrainOcean.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Terrain\SpaceGraphicsToolkit.Terrain.asmdef" />

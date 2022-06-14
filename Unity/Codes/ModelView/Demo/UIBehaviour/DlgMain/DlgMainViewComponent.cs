@@ -6,7 +6,7 @@ namespace ET
 	[EnableMethod]
 	public  class DlgMainViewComponent : Entity,IAwake,IDestroy 
 	{
-		public UnityEngine.UI.Button E_SpaceShipButton
+		public UnityEngine.UI.Button E_SpaceDockButton
      	{
      		get
      		{
@@ -15,15 +15,15 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_SpaceShipButton == null )
+     			if( this.m_E_SpaceDockButton == null )
      			{
-		    		this.m_E_SpaceShipButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_SpaceShip");
+		    		this.m_E_SpaceDockButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Bottom/E_SpaceDock");
      			}
-     			return this.m_E_SpaceShipButton;
+     			return this.m_E_SpaceDockButton;
      		}
      	}
 
-		public UnityEngine.UI.Image E_SpaceShipImage
+		public UnityEngine.UI.Image E_SpaceDockImage
      	{
      		get
      		{
@@ -32,11 +32,11 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_SpaceShipImage == null )
+     			if( this.m_E_SpaceDockImage == null )
      			{
-		    		this.m_E_SpaceShipImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_SpaceShip");
+		    		this.m_E_SpaceDockImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Bottom/E_SpaceDock");
      			}
-     			return this.m_E_SpaceShipImage;
+     			return this.m_E_SpaceDockImage;
      		}
      	}
 
@@ -229,8 +229,8 @@ namespace ET
 
 		public void DestroyWidget()
 		{
-			this.m_E_SpaceShipButton = null;
-			this.m_E_SpaceShipImage = null;
+			this.m_E_SpaceDockButton = null;
+			this.m_E_SpaceDockImage = null;
 			this.m_E_EquipButton = null;
 			this.m_E_EquipImage = null;
 			this.m_E_SpaceButton = null;
@@ -245,8 +245,8 @@ namespace ET
 			this.uiTransform = null;
 		}
 
-		private UnityEngine.UI.Button m_E_SpaceShipButton = null;
-		private UnityEngine.UI.Image m_E_SpaceShipImage = null;
+		private UnityEngine.UI.Button m_E_SpaceDockButton = null;
+		private UnityEngine.UI.Image m_E_SpaceDockImage = null;
 		private UnityEngine.UI.Button m_E_EquipButton = null;
 		private UnityEngine.UI.Image m_E_EquipImage = null;
 		private UnityEngine.UI.Button m_E_SpaceButton = null;

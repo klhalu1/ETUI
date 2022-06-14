@@ -14,7 +14,7 @@ namespace ET
                 return;
             }
             Transform transform = gameObjectComponent.GameObject.transform;
-            transform.position = args.Unit.Position;
+            //transform.position = args.Unit.Position;
         }
     }
 }

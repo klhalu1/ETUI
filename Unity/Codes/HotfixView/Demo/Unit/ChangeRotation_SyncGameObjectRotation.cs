@@ -13,7 +13,7 @@ namespace ET
                 return;
             }
             Transform transform = gameObjectComponent.GameObject.transform;
-            transform.rotation = args.Unit.Rotation;
+            //transform.rotation = args.Unit.Rotation;
         }
     }
 }

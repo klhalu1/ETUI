@@ -304,7 +304,7 @@ message UnitCache2Other_AddOrUpdateUnit //IActorResponse
 
 //获取Unit缓存
 //ResponseType UnitCache2Other_GetUnit
-message Other2UnitCache_GetUnit //IActoRequest
+message Other2UnitCache_GetUnit //IActorRequest
 {
 	int32 RpcId = 90;
 	int64 UnitId = 1;
