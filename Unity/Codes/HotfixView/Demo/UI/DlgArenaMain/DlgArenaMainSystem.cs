@@ -24,7 +24,8 @@ namespace ET
 
 		public static async ETTask OnQuitButtonClickHandler(this DlgArenaMain self)
 		{
-			
+			await SceneChangeHelper.SceneChangeTo(self.ZoneScene(), "Game", 10);
+			Game.EventSystem.Publish(new EventType.ExitArena() {ZoneScene = self.ZoneScene()});
 		}
 
 	}

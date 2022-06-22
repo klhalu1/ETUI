@@ -21,7 +21,7 @@
             //Unit unit = UnitFactory.Create(currentScene, m2CCreateMyUnit.Unit);
             //unitComponent.Add(unit);
 
-            await TimerComponent.Instance.WaitAsync(2000);
+            await TimerComponent.Instance.WaitAsync(1000);
             //zoneScene.RemoveComponent<AIComponent>();
             
             Game.EventSystem.PublishAsync(new EventType.SceneChangeFinish() {ZoneScene = zoneScene, CurrentScene = currentScene}).Coroutine();

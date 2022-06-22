@@ -1,4 +1,5 @@
 using System;
+using ET.WaitType;
 
 namespace ET
 {
@@ -16,9 +17,9 @@ namespace ET
                 Log.Error(e.ToString());
                 return ErrorCode.ERR_RequestSceneTypeError;
             }
-            await ETTask.CompletedTask;
+            //await ETTask.CompletedTask;
+            await zoneScene.GetComponent<ObjectWait>().Wait<Wait_SceneChangeFinish>();
             return ErrorCode.ERR_Success;
         }
-
     }
 }

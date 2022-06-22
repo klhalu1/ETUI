@@ -49,6 +49,8 @@ namespace ET
                 case SceneType.UnitCache:
                     scene.AddComponent<UnitCacheComponent>();
                     break;
+                case SceneType.Battle:
+                    break;
             }
 
             return scene;

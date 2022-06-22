@@ -37,6 +37,7 @@ namespace ET
 
 		public static void ShowWindow(this DlgMain self, Entity contextData = null)
 		{
+			self.CurrentDlgID = WindowID.WindowID_Invaild;
 			self.OnMainButtonClickHandler(WindowID.WindowID_MainSpace);
 			self.Refresh().Coroutine();
 		}

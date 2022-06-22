@@ -108,5 +108,10 @@ namespace ET
         {
             public Unit Unit;
         }
+        
+        public struct ExitArena
+        {
+            public Scene ZoneScene;
+        }
     }
 }

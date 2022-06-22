@@ -1,3 +1,5 @@
+using UnityEngine;
+using UnityEngine.Rendering.Universal;
 namespace ET
 {
     public class SceneChangeStart_AddComponent: AEvent<EventType.SceneChangeStart>
@@ -27,9 +29,21 @@ namespace ET
             {
                 sceneChangeComponent?.Dispose();
             }
-			
 
+            SetUICamToMain();
             //currentScene.AddComponent<OperaComponent>();
+        }
+
+        private void SetUICamToMain()
+        {
+            Camera c = GameObject.Find("SpaceCamera")?.GetComponent<Camera>();
+            c = c == null? Camera.main : c;
+            Camera uiCamera = GameObject.Find("UICamera").GetComponent<Camera>();
+            UniversalAdditionalCameraData pCam_uacd = uiCamera?.GetComponent<UniversalAdditionalCameraData>();
+            UniversalAdditionalCameraData pMainCam_uacd = c?.GetComponent<UniversalAdditionalCameraData>();
+            if (!pMainCam_uacd.cameraStack.Contains(uiCamera))
+                pMainCam_uacd.cameraStack.Add(uiCamera);
+                
         }
     }
 }
