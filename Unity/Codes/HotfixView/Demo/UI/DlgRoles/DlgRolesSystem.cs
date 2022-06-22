@@ -14,9 +14,9 @@ namespace ET
 
 		public static void RegisterUIEvent(this DlgRoles self)
 		{
-			self.View.E_ConfirmButton.AddListener(() => { self.OnConfirmClickHandler(); });
-			self.View.E_CreateRoleButton.AddListener(() => { self.OnCreateRoleClickHandler();});
-			self.View.E_DeleteRoleButton.AddListener(() => { self.OnDeleteRoleClickHandler();});
+			self.View.E_ConfirmButton.AddListener(() => { self.OnConfirmClickHandler().Coroutine(); });
+			self.View.E_CreateRoleButton.AddListener(() => { self.OnCreateRoleClickHandler().Coroutine();});
+			self.View.E_DeleteRoleButton.AddListener(() => { self.OnDeleteRoleClickHandler().Coroutine();});
 			self.View.E_RolesLoopHorizontalScrollRect.AddItemRefreshListener((Transform transform,int index) => { self.OnRoleListRefreshHandler(transform,index);});
 		}
 

@@ -1,5 +1,6 @@
 ﻿namespace ET
 {
+	[ComponentOf(typeof(UIBaseWindow))]
 	public  class DlgArenaMain :Entity,IAwake,IUILogic
 	{
 

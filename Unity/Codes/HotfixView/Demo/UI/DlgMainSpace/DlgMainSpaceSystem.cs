@@ -14,7 +14,7 @@ namespace ET
 		{
 			self.View.E_VSButtonButton.AddListener(() =>
 			{
-				self.OnVSButtonClickHandler();
+				self.OnVSButtonClickHandler().Coroutine();
 			});
 		}
 

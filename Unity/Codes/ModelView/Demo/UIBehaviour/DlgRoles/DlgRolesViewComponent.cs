@@ -4,6 +4,7 @@ using UnityEngine.UI;
 namespace ET
 {
 	[EnableMethod]
+	[ComponentOf(typeof(UIBaseWindow))]
 	public  class DlgRolesViewComponent : Entity,IAwake,IDestroy 
 	{
 		public UnityEngine.RectTransform EGBackGroundRectTransform

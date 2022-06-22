@@ -14,7 +14,7 @@ namespace ET
 		{
 			self.View.E_QuitButton.AddListener(() =>
 			{
-				self.OnQuitButtonClickHandler();
+				self.OnQuitButtonClickHandler().Coroutine();
 			});
 		}
 

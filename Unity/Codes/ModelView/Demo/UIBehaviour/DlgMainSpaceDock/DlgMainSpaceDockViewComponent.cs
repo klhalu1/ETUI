@@ -4,6 +4,7 @@ using UnityEngine.UI;
 namespace ET
 {
 	[EnableMethod]
+	[ComponentOf(typeof(UIBaseWindow))]
 	public  class DlgMainSpaceDockViewComponent : Entity,IAwake,IDestroy 
 	{
 		public UnityEngine.UI.ToggleGroup E_ModelGroupToggleGroup

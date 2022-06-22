@@ -4,6 +4,7 @@ using UnityEngine.UI;
 namespace ET
 {
 	[EnableMethod]
+	[ComponentOf(typeof(UIBaseWindow))]
 	public  class DlgMainShopViewComponent : Entity,IAwake,IDestroy 
 	{
 		public void DestroyWidget()

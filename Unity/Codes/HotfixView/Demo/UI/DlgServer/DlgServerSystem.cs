@@ -14,8 +14,8 @@ namespace ET
 
 		public static void RegisterUIEvent(this DlgServer self)
 		{ 
-			self.View.E_ConfirmButton.AddListener(() => { self.OnConfirmClickHandler();});
-		   self.View.E_ServerListLoopVerticalScrollRect.AddItemRefreshListener((Transform transform, int index) => { self.OnScrollItemRefreshHandler(transform, index); });
+			self.View.E_ConfirmButton.AddListener(() => { self.OnConfirmClickHandler().Coroutine();}); 
+			self.View.E_ServerListLoopVerticalScrollRect.AddItemRefreshListener((Transform transform, int index) => { self.OnScrollItemRefreshHandler(transform, index); });
 		}
 
 		public static void ShowWindow(this DlgServer self, Entity contextData = null)

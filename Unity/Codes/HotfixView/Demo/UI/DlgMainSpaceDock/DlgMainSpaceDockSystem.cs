@@ -12,8 +12,8 @@ namespace ET
 
 		public static void RegisterUIEvent(this DlgMainSpaceDock self)
 		{
-			self.View.E_PreviousButton.AddListener(() => { self.OnPreviousClickHandler();});
-			self.View.E_NextButton.AddListener(() => { self.OnNextClickHandler();});
+			self.View.E_PreviousButton.AddListener(() => { self.OnPreviousClickHandler().Coroutine();});
+			self.View.E_NextButton.AddListener(() => { self.OnNextClickHandler().Coroutine();});
 		}
 
 		public static void ShowWindow(this DlgMainSpaceDock self, Entity contextData = null)

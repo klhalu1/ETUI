@@ -15,30 +15,30 @@ namespace ET
 		{
 			self.View.E_SpaceButton.AddListener(() =>
 			{
-				self.OnMainButtonClickHandler(WindowID.WindowID_MainSpace);
+				self.OnMainButtonClickHandler(WindowID.WindowID_MainSpace).Coroutine();
 			});
 			self.View.E_ShopButton.AddListener(() =>
 			{
-				self.OnMainButtonClickHandler(WindowID.WindowID_MainShop);
+				self.OnMainButtonClickHandler(WindowID.WindowID_MainShop).Coroutine();
 			});
 			self.View.E_SpaceDockButton.AddListener(() =>
 			{
-				self.OnMainButtonClickHandler(WindowID.WindowID_MainSpaceDock);
+				self.OnMainButtonClickHandler(WindowID.WindowID_MainSpaceDock).Coroutine();
 			});
 			self.View.E_EquipButton.AddListener(() =>
 			{
-				self.OnMainButtonClickHandler(WindowID.WindowID_MainEquip);
+				self.OnMainButtonClickHandler(WindowID.WindowID_MainEquip).Coroutine();
 			});
 			self.View.E_InfoButton.AddListener(() =>
 			{
-				self.OnMainButtonClickHandler(WindowID.WindowID_MainInfo);
+				self.OnMainButtonClickHandler(WindowID.WindowID_MainInfo).Coroutine();
 			});
 		}
 
 		public static void ShowWindow(this DlgMain self, Entity contextData = null)
 		{
 			self.CurrentDlgID = WindowID.WindowID_Invaild;
-			self.OnMainButtonClickHandler(WindowID.WindowID_MainSpace);
+			self.OnMainButtonClickHandler(WindowID.WindowID_MainSpace).Coroutine();
 			self.Refresh().Coroutine();
 		}
 
