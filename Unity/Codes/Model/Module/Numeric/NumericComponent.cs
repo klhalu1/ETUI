@@ -108,6 +108,7 @@ namespace ET
 #if SERVER
 	public class NumericComponent: Entity, IAwake, ITransfer, IUnitCache
 #else
+	[ComponentOf(typeof(Unit))]
 	public class NumericComponent: Entity, IAwake, ITransfer
 #endif
 	{
