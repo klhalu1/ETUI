@@ -117,12 +117,52 @@
         <Compile Include="..\..\Server\Model\Module\Console\**\*.cs">
             <Link>Module\Console\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\EquipmentsComponent\EquipmentsComponent.cs">
+          <Link>SpaceArena\EquipmentsComponent\EquipmentsComponent.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\EquipmentsComponent\EquipOp.cs">
+          <Link>SpaceArena\EquipmentsComponent\EquipOp.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Item\AttributeEntry.cs">
+          <Link>SpaceArena\Item\AttributeEntry.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Item\EquipInfoComponent.cs">
+          <Link>SpaceArena\Item\EquipInfoComponent.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Item\Item.cs">
+          <Link>SpaceArena\Item\Item.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Item\ItemType.cs">
+          <Link>SpaceArena\Item\ItemType.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\SpaceDock\SpaceDockComponent.cs">
+          <Link>SpaceArena\SpaceDock\SpaceDockComponent.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\UI\AlertType.cs">
+          <Link>SpaceArena\UI\AlertType.cs</Link>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\..\ThirdParty\ETTask\ETTask.csproj" />
       <ProjectReference Include="..\..\ThirdParty\ShareLib\ShareLib.csproj" />
       <ProjectReference Include="..\..\ThirdParty\UnityEngine\UnityEngine.csproj" />
       <ProjectReference Include="..\..\Tools\Analyzer\Analyzer.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="..\..\Unity\Codes\Model\SpaceArena\SpaceShip">
+        <Link>SpaceArena\SpaceShip</Link>
+      </Folder>
+      <Folder Include="..\..\Unity\Codes\Model\SpaceArena\SpaceShipUnit">
+        <Link>SpaceArena\SpaceShipUnit</Link>
+      </Folder>
     </ItemGroup>
 
 </Project>

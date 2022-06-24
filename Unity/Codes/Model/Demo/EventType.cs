@@ -4,6 +4,14 @@ namespace ET
 {
     namespace EventType
     {
+        public struct AlertMsg
+        {
+            public Scene ZoneScene;
+            public AlertType AlertType;
+            public string Title;
+            public string Message;
+        }
+        
         public struct AppStart
         {
         }

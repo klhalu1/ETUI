@@ -30,5 +30,18 @@
                 set;
             }
         }
+        
+        public struct Wait_AlertMsg: IWaitType
+        {
+            public int Error
+            {
+                get;
+                set;
+            }
+
+            public AlertType Type;
+            
+            public AlertOp Op;
+        }
     }
 }

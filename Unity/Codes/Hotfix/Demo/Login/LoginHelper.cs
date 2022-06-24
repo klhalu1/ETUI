@@ -184,6 +184,7 @@ namespace ET
             int index = zoneScene.GetComponent<RoleInfosComponent>().RoleInfos.FindIndex((info) => { return info.Id == a2CDeleteRole.DeletedRoleInfoId; });
             
             zoneScene.GetComponent<RoleInfosComponent>().RoleInfos.RemoveAt(index);
+            zoneScene.GetComponent<RoleInfosComponent>().CurrentRoleId = 0;
             
             
             await ETTask.CompletedTask;

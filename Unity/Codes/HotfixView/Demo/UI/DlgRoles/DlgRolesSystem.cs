@@ -55,7 +55,8 @@ namespace ET
 
 			if (string.IsNullOrEmpty(name))
 			{
-				Log.Error("Name is null");
+				await AlertMsgHelper.ShowDlgMsg(self.ZoneScene(), "名字不能为空！");
+				//Log.Error("Name is null");
 				return;
 			}
 			
@@ -80,12 +81,16 @@ namespace ET
 		{
 			if (self.ZoneScene().GetComponent<RoleInfosComponent>().CurrentRoleId == 0)
 			{
-				Log.Error("请选择需要删除的角色");
+				await AlertMsgHelper.ShowDlgMsg(self.ZoneScene(), "请选择需要删除的角色");
+				//Log.Error("请选择需要删除的角色");
 				return;
 			}
 			
 			try
 			{
+				AlertOp Op = await AlertMsgHelper.ShowDlgMsg(self.ZoneScene(), "确定要删除角色？",AlertType.ConfirmCancle);
+				if(Op == AlertOp.Cancle)
+					return;
 				int errorCode = await LoginHelper.DeleteRole(self.ZoneScene());
 				if (errorCode != ErrorCode.ERR_Success)
 				{
@@ -110,7 +115,8 @@ namespace ET
 
 			if (self.ZoneScene().GetComponent<RoleInfosComponent>().CurrentRoleId == 0)
 			{
-				Log.Error("请选择角色");
+				await AlertMsgHelper.ShowDlgMsg(self.ZoneScene(), "请选择角色!");
+				//og.Error("请选择角色");
 				return;
 			}
 			
@@ -140,8 +146,5 @@ namespace ET
 			}
 
 		}
-
-		
-		
 	}
 }

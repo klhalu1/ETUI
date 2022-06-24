@@ -19,5 +19,7 @@
         WindowID_MainInfo,      //信息界面
         WindowID_MainShop,      //商城界面
         WindowID_ArenaMain,     //竞技场主界面
+        
+        WindowID_Alert,     //弹窗
     }
 }
