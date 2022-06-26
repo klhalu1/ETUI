@@ -1,0 +1,66 @@
+
+未知NULL
+��链枪Chaingun
+���~以高射速发射低伤害的子弹。对装甲层或重型盾牌无效，但会对未受保护的目标造成坚固伤害。�Fires low-damage bullets at a high rate of fire. Ineffective against layers of armor or heavy shields, but deals solid damage to unprotected targets.
+$��火神加农炮Vulcan Cannon
+���]在较小的同级物品上提高了射程和伤害。对装甲和盾牌造成中等伤害。iImproved range and damage over its smaller sibling. Deals moderate damage against armor and shield alike.
+!��火神炮塔Vulcan Turret
+���f在180度角内精确瞄准并持续弹道射击。非常适合慢速舰船和消灭敌人的支援。~Accurate targeting and sustained ballistic fire in a 180 degree angle. Excellent for slow ships and taking out enemy supports.
+��	轨道炮Railgun
+����该轨道炮具有悠久的有效范围和高伤害，但它慢慢地触发。最好安装在集群中以取出盾牌和装甲。�The Railgun has a long effective range and high damage, but it fires slowly. Best when installed in clusters to take out shields and armor.
+!��量子步枪Quantum Rifle
+����一种缓慢发射的弹道武器，其弹丸穿透防御层，尽管在此过程中会逐渐失去力量。善于狙击敌人的薄弱环节。�A slowly firing ballistic weapon whose projectiles pierce through layers of defense, alothough losing force along the way. Excellent for sniping the weak spots in your enemies.
+$��高斯猎枪Gaussian Shotgun
+����向近距离射击铅弹。撞击破坏了盾牌，并在广阔的区域造成了巨大的破坏。护甲大大降低了冲击力。�Fires a barrage of lead shot at close range. The impact destroys shields and inflicts massive damage in a wide area. Armor reduces the impact greatly.
+��重型机枪Mass Driver
+���f提供良好的射程和伤害的持续射击。迅速摧毁盾牌，但要与沉重的装甲作战。rProvides sustained fire with a good range and damage. Destroys shields quickly, but struggles against heavy armor.
+��轨道炮塔Rail Turret
+����炮塔实际上是多管火箭炮，射程远，伤害大，但只能短时射击。无论身在何处，都很擅长从远处挑衅敌人。�Effectively a multi-barreled Railgun, the Rail Turret has a high range and damage, but can fire only in short bursts. Very strong at picking at the enemy from afar, wherever they may be.
+��高斯步枪Gauss Rifle
+���s高斯步枪是对Railgun的改进，能够以极高的速度射击单发，具有很高的准确性和伤害性。yAn improvement over the Railgun, the Gauss Rifle fires a single shot at extreme velocities with high accuracy and damage.
+��	量子塔Quantum Turret
+���]该量子刀架在你周围各个角度撞击敌人的优势。它的弹丸穿透了几层。�The Quantum Turret has the advantage of striking enemies in all angles around you. Its projectiles pierce through several layers.
+(��海波龙链枪Hyperion Chaingun
+����海波龙链枪的极高射速只能维持很短的时间。一次爆炸会从意想不到的远距离射出大部分盾牌或轻型装甲。�The extreme fire rate of the Hyperion Chaingun can be sustained only for short times. A single burst will take out most shields or light armoring from surprisingly long range.
+.��高斯战争猎枪Gaussian War Shotgun
+����它在射击速度、伤害和射程方面都比较小的版本有所改进。抹杀盾牌，并在一定时间内，压碎甚至通过装甲层。�An improvement over its smaller verion both in terms of fire rate, damage and range. Obliterates shields and, given some time, crushes even through layers of armor.
+"��首都大炮Capital Cannon
+���x首都大炮的火力如此之强，以至于炮弹能穿透目标的几层。这种武器的破坏力是传奇性的。�The Capital Cannon fires with such force that the projectiles smash through several layers of its target. The destructive power of this weapon is legendary.
+&��火箭发射器Rocket Launcher
+����一种简单的武器，可以向敌人发射制导火箭弹。对盾的伤害很差，但是对薄薄的装甲和其他模块非常有效。�A simple weapon that fires a guided rocket at the enemy. Has poor damage against shields, but is very effective against thin layers of armor and other modules.
+!��火箭炮塔Rocket Turret
+����克服了仅锁定在您面前的目标的局限性，“火箭炮塔”向可能位于任何地方的敌人发射归巢火箭。�Overcoming the limitations of locking on targets only in front of you, the Rocket Turret fires homing rockets at enemies wherever they may be.
+'��导弹发射器Missile Launcher
+���o与火箭发射器相比，其有效载荷有所提高，射程略有提高。爆炸半径穿过轻型装甲。�Packs a greater payload than the Rocket Launcher with slightly improved range. The explosion radius reaches through light armor.
+$��地雷发射器Mine Launcher
+����投下高产量地雷的小包，这些小包地雷会在敌人接触时爆炸。无法定位，但在出发时会受到惩罚。盾牌减轻了打击。�Drops packets of high yield mines that detonate upon enemy contact. Untargetable, but punishing when set off. Shields soften the blow.
+'��鱼雷发射器Torpedo Launcher
+���u该武器向敌人发射缓慢移动的非制导鱼雷。未屏蔽的碰撞会在大半径内造成极大的损坏。�This weapon launches a slowly moving unguided torpedo towards the enemy. An unshielded collision causes extreme damage in a large radius.
+ ��阿森纳墙Arsenal Wall
+���u一种广泛耐用的武​​器，可以停止大多数最初的撞击。向您身边的敌人发射大批火箭。wA wide and durable weapon that stops most initial impacts. Fires off large swarms of rockets at enemies in from of you.
+(��蝎子发射器Scorpion Launcher
+����蝎子发射器快速连续发射三枚导弹，但需要更多时间重新装弹。一旦敌人的盾牌被撤下，它就会非常强大。�The Scorpion Launcher fires three missiles in quick succession but takes more time to reload. Very powerful once enemy shields are taken down.
+"��冲击导弹Impact Missile
+���T冲击导弹的打击力使爆炸可以轻松使小型飞船脱轨。由此得名。lImpact Missile strike with such force that the explosion can derail smaller craft with ease. Hence the name.
+&��高射炮塔Flak Rocket Turret
+���i用低制导火箭弹击中敌人，将未屏蔽的侧翼像纸一样切碎。能够以360度角发射。�Blasts the enemy with a hail of low-guidance rockets that shreds unshielded flanks like they were paper. Capable of firing in a 360 degree angle.
+'��弹头发射器Warhead Launcher
+����该弹头发射触发，可以削弱最大的船鱼雷。面对这种可怕的武器时，强烈建议躲闪，屏蔽或点防御。�The Warhead Launcher fires torpedoes that can cripple the largest of ships. Dodging, shielding or point defense is highly recommended when facing this fearsome weapon.
+#��九头蛇炮塔Hydra Turret
+����九头蛇炮塔可在360度角和远距离发射非常强大的制导导弹。虽然针对防护罩是次选的，但对船体的损坏却是不可思议的。�The Hydra Turret fires very powerful guided missiles in a 360 degree angle and at long ranges. While sub-optional against shields, the damage upon hulls is incredible.
+��小型激光Small Laser
+����这种微小的激光武器会在短时间内发射多束光束，绕过盾牌并对未装甲的目标造成严重破坏。对装甲效果很差。�This tiny laser weapon fires multiple beams with short durations that bypass shield and wreak havoc upon unarmored targets. Very ineffective against armor.
+��	激光束
+Laser Beam
+���W激光束射程远，精度高，可穿透护盾并通过无装甲船体快速燃烧。jLong range and good accuracy, the Laser Beam penetrates shields and burns quickly through unarmored hulls.
+ ��激光炮塔Laser Turret
+����可以以360度角瞄准并打击您周围的敌人的激光束。最好是越过敌人并在装甲稀少的侧面和背面打击他们。�A Laser Beam that can target and strike enemies in a 360 degree angle around you. Best when passing over the enemy and striking them on the sides and back where armor is scarce.
+��融合射线
+Fusion Ray
+���~逐渐加力的光束穿透护罩，起初造成较小的伤害，但如果能够承受其火力，则具有极强的威力。�A gradually powering beam that penetrates shields, dealing minor damage at first, but extremely potent if able to sustain its fire.
+��脉冲激光Pulse Laser
+�¤�脉冲激光在敌人身上释放出一道短命但具有高度破坏性的激光。对敌人群很有用，对盔甲没有那么强。�The Pulse Laser unleashes a torrent of short-lived but highly damaging lasers at your enemies. Great against swarms of enemies, not so great against armor.
+!ä融合炮塔Fusion Turret
+�Ĥ�融合炮塔克服了敌人从其手中滑落的问题，可确保逐渐发威的光束保持在目标上。还具有比非炮塔版本更高的伤害。�Overcoming the problem of enemies slipping from its grasp, the Fusion Turret assures the gradually powering beam stays on its target. Also has higher damage than its non-turreted versions.
+)Ť电弧融合阵列Arcfusion Array
+�Ƥ�尽管基于能量的武器通常无法有效抵抗装甲，但“电弧融合阵”却产生了如此之大的伤害，几乎无关紧要。�Although energy-based weapons are generally ineffective against armoring, the Arcfusion Array yields so much damage it doesn't almost matter.

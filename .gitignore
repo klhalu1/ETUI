@@ -68,3 +68,8 @@ Unity/Unity.ModelView.csproj
 /Unity/UIElementsSchema/
 /Unity/Assets/Plugins/CW/
 /Unity/Assets/Plugins/CW.meta
+Unity/SpaceGraphicsToolkit.csproj
+Unity/Unity.Mono.csproj
+Unity/Unity.sln.DotSettings.user
+Unity/UserSettings/EditorUserSettings.asset
+Unity/UserSettings/Layouts/CurrentMaximizeLayout.dwlt

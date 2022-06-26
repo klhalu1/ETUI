@@ -25,6 +25,8 @@ namespace ET
 		// 热更层的类型
 		private readonly Dictionary<string, Type> hotfixTypes = new Dictionary<string, Type>();
 		private ILRuntime.Runtime.Enviorment.AppDomain appDomain;
+		
+		public IStaticFunc localizationFunc;
 
 		private CodeLoader()
 		{
@@ -79,6 +81,7 @@ namespace ET
 					}
 					IStaticMethod start = new MonoStaticMethod(assembly, "ET.Entry", "Start");
 					start.Run();
+                        localizationFunc = new MonoStaticFunc(assembly, "ET.LocalizationHelper", "GetStrByLanguage");
 					break;
 				}
 				case CodeMode.ILRuntime:
@@ -113,6 +116,7 @@ namespace ET
 					
 					IStaticMethod start = new ILStaticMethod(appDomain, "ET.Entry", "Start", 0);
 					start.Run();
+                        localizationFunc = new ILStaticFunc(appDomain, "ET.LocalizationHelper", "GetStrByLanguage", 1);                     
 					break;
 				}
 				case CodeMode.Reload:
@@ -124,6 +128,7 @@ namespace ET
 					this.LoadLogic();
 					IStaticMethod start = new MonoStaticMethod(assembly, "ET.Entry", "Start");
 					start.Run();
+                        localizationFunc = new MonoStaticFunc(assembly, "ET.LocalizationHelper", "GetStrByLanguage");
 					break;
 				}
 			}

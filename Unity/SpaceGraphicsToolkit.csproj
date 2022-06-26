@@ -132,7 +132,6 @@
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Shared\Extras\Scripts\SgtDragSource.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Flare\Required\Scripts\SgtFlareMainTex.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Shared\Extras\Scripts\SgtBackgroundMesh.cs" />
-     <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Packs\Solar System Pack\Scripts\SgtSolarSystemController.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Shared\Extras\Scripts\SgtProceduralTint.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Shared\Examples\Scripts\SgtCameraPath.cs" />
      <Compile Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Debris\Required\Scripts\SgtDebris.cs" />
@@ -198,7 +197,6 @@
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Prominence\Required\Shaders\Prominence.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Flare\Required\Shaders\Flare.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Shared\Extras\Shaders\Depth.shader" />
-     <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Packs\Star Pack\Copyright.txt" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Aurora\Required\Shaders\Aurora.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Shared\Extras\Shaders\Background.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\SpaceGraphicsToolkit.asmdef" />
@@ -213,7 +211,6 @@
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Cloudsphere\Required\Shaders\Cloudsphere.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Belt\Required\Shaders\Belt_Opaque.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Thruster\Required\Shaders\Thruster.shader" />
-     <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Packs\Solar System Pack\Copyright.txt" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Planet\Required\Shaders\Resources\PlanetWater.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Planet\Required\Shaders\Planet.shader" />
      <None Include="Assets\Plugins\CW\SpaceGraphicsToolkit\Features\Star\Required\Shaders\Star.shader" />

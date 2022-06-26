@@ -13,6 +13,7 @@ namespace ET
 		public static void RegisterUIEvent(this DlgLogin self)
 		{
 			self.View.E_LoginButton.AddListener(() => { self.OnLoginClickHandler().Coroutine();});
+			self.View.E_LanguageButton.AddListener(() => { self.OnLanguageClickHandler().Coroutine();});
 		}
 
 		public static void ShowWindow(this DlgLogin self, Entity contextData = null)
@@ -56,6 +57,20 @@ namespace ET
 		public static void HideWindow(this DlgLogin self)
 		{
 
+		}
+
+		public static async ETTask OnLanguageClickHandler(this DlgLogin self)
+		{
+			if (LocalizationService.Instance.Language != LanguageInfo.Chinese)
+			{
+				LocalizationComponent.Instance.ChangeLanguage(LanguageInfo.Chinese);
+			}
+			else
+			{
+				LocalizationComponent.Instance.ChangeLanguage(LanguageInfo.English);
+			}
+			//LocalizationComponent.Instance.ChangeLanguage(UnityEngine.Random.Range(0, 2) == 0 ? LanguageInfo.Chinese : LanguageInfo.Spanish);
+			await ETTask.CompletedTask;
 		}
 	}
 }

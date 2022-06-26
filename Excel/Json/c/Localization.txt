@@ -1,0 +1,8 @@
+{"list":[
+{"_t":"Localization","_id":1001,"Chinese":"中文","English":"English","Spanish":"Español"},
+{"_t":"Localization","_id":1002,"Chinese":"{0}个香蕉","English":"{0} bananas","Spanish":"{0} ###"},
+{"_t":"Localization","_id":1003,"Chinese":"老虎","English":"tiger","Spanish":"((()))"},
+{"_t":"Localization","_id":1004,"Chinese":"登录","English":"Login","Spanish":"Iniciar sesión"},
+{"_t":"Localization","_id":1005,"Chinese":"请输入账号。。。","English":"Enter Account..","Spanish":"Introduzca una cuenta."},
+{"_t":"Localization","_id":1006,"Chinese":"请输入密码。。。","English":"Enter Password...","Spanish":"Introduzca la contraseña..."},
+]}

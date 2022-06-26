@@ -109,6 +109,40 @@ namespace ET
      		}
      	}
 
+		public UnityEngine.UI.Button E_LanguageButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_LanguageButton == null )
+     			{
+		    		this.m_E_LanguageButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Sprite_BackGround/E_Language");
+     			}
+     			return this.m_E_LanguageButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_LanguageImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_LanguageImage == null )
+     			{
+		    		this.m_E_LanguageImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Sprite_BackGround/E_Language");
+     			}
+     			return this.m_E_LanguageImage;
+     		}
+     	}
+
 		public void DestroyWidget()
 		{
 			this.m_E_LoginButton = null;
@@ -117,6 +151,8 @@ namespace ET
 			this.m_E_AccountImage = null;
 			this.m_E_PasswordInputField = null;
 			this.m_E_PasswordImage = null;
+			this.m_E_LanguageButton = null;
+			this.m_E_LanguageImage = null;
 			this.uiTransform = null;
 		}
 
@@ -126,6 +162,8 @@ namespace ET
 		private UnityEngine.UI.Image m_E_AccountImage = null;
 		private UnityEngine.UI.InputField m_E_PasswordInputField = null;
 		private UnityEngine.UI.Image m_E_PasswordImage = null;
+		private UnityEngine.UI.Button m_E_LanguageButton = null;
+		private UnityEngine.UI.Image m_E_LanguageImage = null;
 		public Transform uiTransform = null;
 	}
 }
