@@ -49,9 +49,7 @@
     <ProjectReference Include="..\Model\Server.Model.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Demo\Numeric\Handler" />
     <Folder Include="SpaceArena\Equipment\Event" />
     <Folder Include="SpaceArena\Equipment\Handler" />
-    <Folder Include="SpaceArena\SpaceShip" />
   </ItemGroup>
 </Project>

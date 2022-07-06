@@ -138,6 +138,7 @@ namespace ET
 				}
 				
 				self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Main);
+				self.ZoneScene().GetComponent<UIComponent>().CloseWindow(WindowID.WindowID_Roles);
 				self.ZoneScene().GetComponent<UIComponent>().HideWindow(WindowID.WindowID_Loading);
 			}
 			catch (Exception e)

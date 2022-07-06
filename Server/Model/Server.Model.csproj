@@ -77,6 +77,9 @@
     <Compile Include="..\..\Unity\Codes\Model\Module\Actor\IActorMessage.cs">
       <Link>Module\Actor\IActorMessage.cs</Link>
     </Compile>
+    <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Bag\BagComponent.cs">
+      <Link>SpaceArena\Bag\BagComponent.cs</Link>
+    </Compile>
     <Compile Include="..\..\Unity\Codes\Model\SpaceArena\EquipmentsComponent\EquipmentsComponent.cs">
       <Link>SpaceArena\Equipment\EquipmentsComponent.cs</Link>
     </Compile>
@@ -88,6 +91,12 @@
     </Compile>
     <Compile Include="..\..\Unity\Codes\Model\SpaceArena\Item\ItemType.cs">
       <Link>SpaceArena\Item\ItemType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Codes\Model\SpaceArena\SpaceDock\SpaceDockComponent.cs">
+      <Link>SpaceArena\SpaceDock\SpaceDockComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Codes\Model\SpaceArena\SpaceShip\SpaceShip.cs">
+      <Link>SpaceArena\SpaceShip\SpaceShip.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

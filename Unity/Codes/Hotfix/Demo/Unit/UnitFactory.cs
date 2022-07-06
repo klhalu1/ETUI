@@ -18,6 +18,12 @@ namespace ET
 	        {
 		        numericComponent.Set(unitInfo.Ks[i], unitInfo.Vs[i]);
 	        }
+
+	        SpaceDockComponent spaceDockComponent = unit.AddComponent<SpaceDockComponent>();
+	        for (int i = 0; i < unitInfo.DockIds.Count; i++)
+	        {
+		        spaceDockComponent.Set(i, unitInfo.DockIds[i]);
+	        }
 /*	        
 	        unit.AddComponent<MoveComponent>();
 	        if (unitInfo.MoveInfo != null)

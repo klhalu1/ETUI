@@ -15,4 +15,21 @@ namespace ET
         Power = 32,     //动力
         Support = 33,   //支援
     }
+
+    /// <summary>
+    /// 物品操作
+    /// </summary>
+    public enum ItemOp
+    {
+        Add = 0,
+        Remove = 1,
+    } 
+    /// <summary>
+    /// 物品容器类型
+    /// </summary>
+    public enum ItemContainerType
+    {
+        Bag = 0,
+        SpaceShip = 1,
+    }
 }

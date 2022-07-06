@@ -3,6 +3,12 @@
 	// 这个可弄个配置表生成
     public static class NumericType
     {
+	    //基础属性
+	    public const int Money = 1000;
+	    public const int Gold = 1001;
+	    public const int Level = 1002;
+	    public const int Exp = 1003;
+	    
 	    public const int Max = 10000;
 
 	    public const int Speed = 1000;

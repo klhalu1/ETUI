@@ -36,11 +36,10 @@ namespace ET
         public override void GetComponent(Unit unit, Entity component)
         {
             Type type = component.GetType();
-            if (!(typeof (IUnitCache).IsAssignableFrom(type)))
+            if (typeof (IUnitCache).IsAssignableFrom(type))
             {
-                return;
+                unit.GetComponent<UnitDBSaveComponent>()?.AddChange(type);
             }
-            unit.GetComponent<UnitDBSaveComponent>()?.AddChange(type);
         }
     }
 

@@ -59,5 +59,7 @@ namespace ET
 		 public const ushort ItemInfo = 10056;
 		 public const ushort C2M_EnterArena = 10057;
 		 public const ushort M2C_EnterArena = 10058;
+		 public const ushort C2M_AddUnitMoney = 10059;
+		 public const ushort M2C_AddUnitMoney = 10060;
 	}
 }

@@ -33,6 +33,10 @@ namespace ET
 			{
 				self.OnMainButtonClickHandler(WindowID.WindowID_MainInfo).Coroutine();
 			});
+			self.View.E_AddMoneyButton.AddListener(() =>
+			{
+				self.OnAddMoneyButtonClickHandler().Coroutine();
+			});
 		}
 
 		public static void ShowWindow(this DlgMain self, Entity contextData = null)
@@ -59,7 +63,30 @@ namespace ET
 
 		public static async ETTask Refresh(this DlgMain self)
 		{
+			Unit unit = UnitHelper.GetMyUnitFromCurrentScene(self.ZoneScene().CurrentScene());
+			NumericComponent numericComponent = unit.GetComponent<NumericComponent>();
 			
+			self.View.E_RoleLevelText.SetText(numericComponent?.GetByKey(NumericType.Level).ToString());
+			self.View.E_GoldText.SetText(numericComponent?.GetByKey(NumericType.Gold).ToString());
+			self.View.E_MoneyText.SetText(numericComponent?.GetByKey(NumericType.Money).ToString());
+
+			RoleInfosComponent roleInfosComponent = self.ZoneScene().GetComponent<RoleInfosComponent>();
+			self.View.E_NameText.SetText(roleInfosComponent?.GetRoleName());
+		}
+		
+		public static async ETTask OnAddMoneyButtonClickHandler(this DlgMain self)
+		{
+			try
+			{
+				int error = await NumericHelper.TestUpdateNumric(self.ZoneScene());
+				if (error != ErrorCode.ERR_Success)
+					return;
+				Log.Debug("发送更新属性测试消息成功");
+			}
+			catch (Exception e)
+			{
+				Log.Error(e.ToString());
+			}
 		}
 
 	}

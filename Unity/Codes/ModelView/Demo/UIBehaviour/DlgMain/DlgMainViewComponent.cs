@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace ET
 {
-	[EnableMethod]
 	[ComponentOf(typeof(UIBaseWindow))]
+	[EnableMethod]
 	public  class DlgMainViewComponent : Entity,IAwake,IDestroy 
 	{
 		public UnityEngine.UI.Button E_SpaceDockButton
@@ -177,6 +177,23 @@ namespace ET
      		}
      	}
 
+		public UnityEngine.UI.Text E_NameText
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_NameText == null )
+     			{
+		    		this.m_E_NameText = UIFindHelper.FindDeepChild<UnityEngine.UI.Text>(this.uiTransform.gameObject,"Center/Group_Top/Group_Head/Image/E_Name");
+     			}
+     			return this.m_E_NameText;
+     		}
+     	}
+
 		public UnityEngine.UI.Text E_RoleLevelText
      	{
      		get
@@ -188,7 +205,7 @@ namespace ET
      			}
      			if( this.m_E_RoleLevelText == null )
      			{
-		    		this.m_E_RoleLevelText = UIFindHelper.FindDeepChild<UnityEngine.UI.Text>(this.uiTransform.gameObject,"Center/Group_Top/Group_Head/E_RoleLevel");
+		    		this.m_E_RoleLevelText = UIFindHelper.FindDeepChild<UnityEngine.UI.Text>(this.uiTransform.gameObject,"Center/Group_Top/Group_Head/Image/E_RoleLevel");
      			}
      			return this.m_E_RoleLevelText;
      		}
@@ -211,7 +228,7 @@ namespace ET
      		}
      	}
 
-		public UnityEngine.UI.Text E_ExpText
+		public UnityEngine.UI.Text E_MoneyText
      	{
      		get
      		{
@@ -220,11 +237,45 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_ExpText == null )
+     			if( this.m_E_MoneyText == null )
      			{
-		    		this.m_E_ExpText = UIFindHelper.FindDeepChild<UnityEngine.UI.Text>(this.uiTransform.gameObject,"Center/Group_Top/Group_ExpTip/E_Exp");
+		    		this.m_E_MoneyText = UIFindHelper.FindDeepChild<UnityEngine.UI.Text>(this.uiTransform.gameObject,"Center/Group_Top/Group_ExpTip/E_Money");
      			}
-     			return this.m_E_ExpText;
+     			return this.m_E_MoneyText;
+     		}
+     	}
+
+		public UnityEngine.UI.Button E_AddMoneyButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_AddMoneyButton == null )
+     			{
+		    		this.m_E_AddMoneyButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/Group_Top/Group_ExpTip/E_AddMoney");
+     			}
+     			return this.m_E_AddMoneyButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_AddMoneyImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_AddMoneyImage == null )
+     			{
+		    		this.m_E_AddMoneyImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/Group_Top/Group_ExpTip/E_AddMoney");
+     			}
+     			return this.m_E_AddMoneyImage;
      		}
      	}
 
@@ -240,9 +291,12 @@ namespace ET
 			this.m_E_InfoImage = null;
 			this.m_E_ShopButton = null;
 			this.m_E_ShopImage = null;
+			this.m_E_NameText = null;
 			this.m_E_RoleLevelText = null;
 			this.m_E_GoldText = null;
-			this.m_E_ExpText = null;
+			this.m_E_MoneyText = null;
+			this.m_E_AddMoneyButton = null;
+			this.m_E_AddMoneyImage = null;
 			this.uiTransform = null;
 		}
 
@@ -256,9 +310,12 @@ namespace ET
 		private UnityEngine.UI.Image m_E_InfoImage = null;
 		private UnityEngine.UI.Button m_E_ShopButton = null;
 		private UnityEngine.UI.Image m_E_ShopImage = null;
+		private UnityEngine.UI.Text m_E_NameText = null;
 		private UnityEngine.UI.Text m_E_RoleLevelText = null;
 		private UnityEngine.UI.Text m_E_GoldText = null;
-		private UnityEngine.UI.Text m_E_ExpText = null;
+		private UnityEngine.UI.Text m_E_MoneyText = null;
+		private UnityEngine.UI.Button m_E_AddMoneyButton = null;
+		private UnityEngine.UI.Image m_E_AddMoneyImage = null;
 		public Transform uiTransform = null;
 	}
 }

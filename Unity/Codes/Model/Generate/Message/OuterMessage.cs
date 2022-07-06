@@ -132,24 +132,18 @@ namespace ET
 		public int ConfigId { get; set; }
 
 		[ProtoMember(3)]
-		public int Type { get; set; }
+		public string Name { get; set; }
 
 		[ProtoMember(4)]
-		public int Level { get; set; }
+		public int Type { get; set; }
 
 		[ProtoMember(5)]
-		public long Exp { get; set; }
+		public List<long> DockIds = new List<long>();
 
 		[ProtoMember(6)]
-		public long Gold { get; set; }
-
-		[ProtoMember(7)]
-		public long Money { get; set; }
-
-		[ProtoMember(8)]
 		public List<int> Ks = new List<int>();
 
-		[ProtoMember(9)]
+		[ProtoMember(7)]
 		public List<long> Vs = new List<long>();
 
 	}
@@ -945,6 +939,31 @@ namespace ET
 	[Message(OuterOpcode.M2C_EnterArena)]
 	[ProtoContract]
 	public partial class M2C_EnterArena: Object, IActorLocationResponse
+	{
+		[ProtoMember(1)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(2)]
+		public int Error { get; set; }
+
+		[ProtoMember(3)]
+		public string Message { get; set; }
+
+	}
+
+	[ResponseType(nameof(M2C_AddUnitMoney))]
+	[Message(OuterOpcode.C2M_AddUnitMoney)]
+	[ProtoContract]
+	public partial class C2M_AddUnitMoney: Object, IActorLocationRequest
+	{
+		[ProtoMember(1)]
+		public int RpcId { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_AddUnitMoney)]
+	[ProtoContract]
+	public partial class M2C_AddUnitMoney: Object, IActorLocationResponse
 	{
 		[ProtoMember(1)]
 		public int RpcId { get; set; }

@@ -21,7 +21,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Tools\Analyzer\Analyzer.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+      <ProjectReference Include="..\..\Tools\Analyzer\Analyzer.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
       <ProjectReference Include="..\Model\Robot.Model.csproj" />
     </ItemGroup>
     
@@ -90,6 +90,34 @@
 
         <Compile Include="..\..\Server\Hotfix\Config\**\*.cs">
             <Link>Config\%(RecursiveDir)%(FileName)%(Extension)</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Hotfix\SpaceArena\Helper\AlertMsgHelper.cs">
+          <Link>SpaceArena\Helper\AlertMsgHelper.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Hotfix\SpaceArena\Item\AttributeEntrySystem.cs">
+          <Link>SpaceArena\Item\AttributeEntrySystem.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Hotfix\SpaceArena\Item\EquipInfoComponentSystem.cs">
+          <Link>SpaceArena\Item\EquipInfoComponentSystem.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Hotfix\SpaceArena\Item\ItemSystem.cs">
+          <Link>SpaceArena\Item\ItemSystem.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Hotfix\SpaceArena\SpaceDock\SpaceDockComponentSystem.cs">
+          <Link>SpaceArena\SpaceDock\SpaceDockComponentSystem.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Hotfix\SpaceArena\SpaceScene\SpaceSceneHelper.cs">
+          <Link>SpaceArena\SpaceScene\SpaceSceneHelper.cs</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Codes\Hotfix\SpaceArena\SpaceShip\SpaceShipFactory.cs">
+          <Link>SpaceArena\SpaceShip\SpaceShipFactory.cs</Link>
         </Compile>
     </ItemGroup>
     

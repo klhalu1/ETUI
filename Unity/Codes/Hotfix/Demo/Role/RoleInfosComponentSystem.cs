@@ -14,9 +14,21 @@
         }
     }
 
+    [FriendClass(typeof(RoleInfosComponent))]
+    [FriendClass(typeof(RoleInfo))]
     public static class RoleInfosComponentSystem
     {
-        
+        public static string GetRoleName(this RoleInfosComponent self)
+        {
+            foreach (RoleInfo roleInfo in self.RoleInfos)
+            {
+                if (roleInfo.Id == self.CurrentRoleId)
+                {
+                    return roleInfo.Name;
+                }
+            }
+            return null;
+        }
         
     }
 }

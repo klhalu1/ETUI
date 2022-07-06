@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace ET
 {
-	[EnableMethod]
 	[ComponentOf(typeof(UIBaseWindow))]
+	[EnableMethod]
 	public  class DlgMainSpaceDockViewComponent : Entity,IAwake,IDestroy 
 	{
 		public UnityEngine.UI.ToggleGroup E_ModelGroupToggleGroup
@@ -177,6 +177,142 @@ namespace ET
      		}
      	}
 
+		public UnityEngine.UI.Button E_UnLockButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_UnLockButton == null )
+     			{
+		    		this.m_E_UnLockButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/E_UnLock");
+     			}
+     			return this.m_E_UnLockButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_UnLockImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_UnLockImage == null )
+     			{
+		    		this.m_E_UnLockImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/E_UnLock");
+     			}
+     			return this.m_E_UnLockImage;
+     		}
+     	}
+
+		public UnityEngine.UI.Button E_BuildButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_BuildButton == null )
+     			{
+		    		this.m_E_BuildButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/E_Build");
+     			}
+     			return this.m_E_BuildButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_BuildImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_BuildImage == null )
+     			{
+		    		this.m_E_BuildImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/E_Build");
+     			}
+     			return this.m_E_BuildImage;
+     		}
+     	}
+
+		public UnityEngine.UI.Button E_GetButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_GetButton == null )
+     			{
+		    		this.m_E_GetButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/E_Get");
+     			}
+     			return this.m_E_GetButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_GetImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_GetImage == null )
+     			{
+		    		this.m_E_GetImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/E_Get");
+     			}
+     			return this.m_E_GetImage;
+     		}
+     	}
+
+		public UnityEngine.UI.Button E_SellButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_SellButton == null )
+     			{
+		    		this.m_E_SellButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Center/E_Sell");
+     			}
+     			return this.m_E_SellButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_SellImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_SellImage == null )
+     			{
+		    		this.m_E_SellImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Center/E_Sell");
+     			}
+     			return this.m_E_SellImage;
+     		}
+     	}
+
 		public void DestroyWidget()
 		{
 			this.m_E_ModelGroupToggleGroup = null;
@@ -189,6 +325,14 @@ namespace ET
 			this.m_E_NextImage = null;
 			this.m_E_ListButton = null;
 			this.m_E_ListImage = null;
+			this.m_E_UnLockButton = null;
+			this.m_E_UnLockImage = null;
+			this.m_E_BuildButton = null;
+			this.m_E_BuildImage = null;
+			this.m_E_GetButton = null;
+			this.m_E_GetImage = null;
+			this.m_E_SellButton = null;
+			this.m_E_SellImage = null;
 			this.uiTransform = null;
 		}
 
@@ -202,6 +346,14 @@ namespace ET
 		private UnityEngine.UI.Image m_E_NextImage = null;
 		private UnityEngine.UI.Button m_E_ListButton = null;
 		private UnityEngine.UI.Image m_E_ListImage = null;
+		private UnityEngine.UI.Button m_E_UnLockButton = null;
+		private UnityEngine.UI.Image m_E_UnLockImage = null;
+		private UnityEngine.UI.Button m_E_BuildButton = null;
+		private UnityEngine.UI.Image m_E_BuildImage = null;
+		private UnityEngine.UI.Button m_E_GetButton = null;
+		private UnityEngine.UI.Image m_E_GetImage = null;
+		private UnityEngine.UI.Button m_E_SellButton = null;
+		private UnityEngine.UI.Image m_E_SellImage = null;
 		public Transform uiTransform = null;
 	}
 }

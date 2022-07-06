@@ -303,6 +303,7 @@ namespace ET
                 return g2CEnterGame.Error;
             }
             
+            zoneScene.GetComponent<PlayerComponent>().MyId = g2CEnterGame.MyId;
             Log.Debug("角色进入游戏成功!!!!");
             await zoneScene.GetComponent<ObjectWait>().Wait<Wait_SceneChangeFinish>();
             return ErrorCode.ERR_Success;

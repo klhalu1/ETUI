@@ -5,21 +5,34 @@ namespace ET
 {
     [FriendClass(typeof(Unit))]
     [FriendClass(typeof(NumericComponent))]
+    [FriendClass(typeof(SpaceDockComponent))]
     [FriendClass(typeof(GateMapComponent))]
     public static class UnitHelper
     {
         public static UnitInfo CreateUnitInfo(Unit unit)
         {
             UnitInfo unitInfo = new UnitInfo();
-            NumericComponent nc = unit.GetComponent<NumericComponent>();
             unitInfo.UnitId = unit.Id;
             unitInfo.ConfigId = unit.ConfigId;
             unitInfo.Type = (int)unit.Type;
+            unitInfo.Name = unit.Name;
 
-            foreach ((int key, long value) in nc.NumericDic)
+            NumericComponent nc = unit.GetComponent<NumericComponent>();
+            if (nc != null)
             {
-                unitInfo.Ks.Add(key);
-                unitInfo.Vs.Add(value);
+                foreach ((int key, long value) in nc.NumericDic)
+                {
+                    unitInfo.Ks.Add(key);
+                    unitInfo.Vs.Add(value);
+                }
+            }
+            SpaceDockComponent sc = unit.GetComponent<SpaceDockComponent>();
+            if (sc != null)
+            {
+                foreach ((int key, long value) in sc.DockIds)
+                {
+                    unitInfo.DockIds.Add(value);
+                }
             }
 
             return unitInfo;
@@ -47,7 +60,7 @@ namespace ET
 
         public static async ETTask<(bool, Unit)> LoadUnit(Player player)
         {
-            GateMapComponent gateMapComponent = player.AddComponent<GateMapComponent>();
+             GateMapComponent gateMapComponent = player.AddComponent<GateMapComponent>();
             gateMapComponent.Scene = await SceneFactory.Create(gateMapComponent, "GateMap", SceneType.Map);
 
             Unit unit = await UnitCacheHelper.GetUnitCache<Unit>(gateMapComponent.Scene, player.UnitId);
@@ -56,6 +69,10 @@ namespace ET
             if (isNewUnit)
             {
                 unit = UnitFactory.Create(gateMapComponent.Scene,player.Id,UnitType.Player);
+                
+                var roleInfos = await DBManagerComponent.Instance.GetZoneDB(player.DomainZone()).Query<RoleInfo>(d => d.Id == player.UnitId);
+                unit.AddComponent(roleInfos[0]);
+                
                 UnitCacheHelper.AddOrUpdateUnitAllCache(unit);
             }
 
@@ -64,6 +81,11 @@ namespace ET
 
         public static async ETTask InitUnit(Unit unit, bool isNew)
         {
+            //初始化
+            if (isNew)
+            {
+
+            }
             await ETTask.CompletedTask;
         }
     }

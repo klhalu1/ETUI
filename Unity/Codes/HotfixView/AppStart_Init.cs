@@ -1,6 +1,6 @@
 namespace ET
 {
-    public class AppStart_Init: AEvent<EventType.AppStart>
+    public class  AppStart_Init: AEvent<EventType.AppStart>
     {
         protected override void Run(EventType.AppStart args)
         {

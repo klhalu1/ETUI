@@ -146,6 +146,10 @@
           <Link>SpaceArena\SpaceDock\SpaceDockComponent.cs</Link>
         </Compile>
 
+        <Compile Include="..\..\Unity\Codes\Model\SpaceArena\SpaceShip\SpaceShip.cs">
+          <Link>SpaceArena\SpaceShip\SpaceShip.cs</Link>
+        </Compile>
+
         <Compile Include="..\..\Unity\Codes\Model\SpaceArena\UI\AlertType.cs">
           <Link>SpaceArena\UI\AlertType.cs</Link>
         </Compile>
@@ -157,9 +161,6 @@
       <ProjectReference Include="..\..\Tools\Analyzer\Analyzer.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="..\..\Unity\Codes\Model\SpaceArena\SpaceShip">
-        <Link>SpaceArena\SpaceShip</Link>
-      </Folder>
       <Folder Include="..\..\Unity\Codes\Model\SpaceArena\SpaceShipUnit">
         <Link>SpaceArena\SpaceShipUnit</Link>
       </Folder>

@@ -126,6 +126,7 @@
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_UI_LoopScrollRectBase_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_ValueTuple_3_Int32_Int64_Int32_Binding.cs" />
      <Compile Include="Assets\Mono\MonoBehaviour\LoopScrollRect\LoopScrollSizeHelper.cs" />
+     <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_PlayerPrefs_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_Mathf_Binding.cs" />
      <Compile Include="Assets\Mono\MonoBehaviour\LoopScrollRect\LoopScrollDataSource.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_List_1_Action_Binding_Enumerator_Binding.cs" />
@@ -141,6 +142,7 @@
      <Compile Include="Assets\Mono\Helper\PathHelper.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_IEnumerator_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_List_1_Int64_Binding.cs" />
+     <Compile Include="Assets\Mono\MonoBehaviour\Localization\LocalizedText.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ProtoBuf_Meta_TypeModel_Binding.cs" />
      <Compile Include="Assets\Mono\Core\Helper\MD5Helper.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_Vector2_Binding.cs" />
@@ -153,6 +155,7 @@
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_UI_Toggle_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_Object_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_Component_Binding.cs" />
+     <Compile Include="Assets\Mono\MonoBehaviour\Localization\LanguageInfo.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_RaycastHit_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_RuntimeAnimatorController_Binding.cs" />
      <Compile Include="Assets\Mono\MonoBehaviour\LoopScrollRect\LoopScrollPrefabSource.cs" />
@@ -238,6 +241,7 @@
      <Compile Include="Assets\Mono\Core\Helper\FileHelper.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_TService_Binding.cs" />
      <Compile Include="Assets\Mono\Core\Helper\ForeachHelper.cs" />
+     <Compile Include="Assets\Mono\MonoBehaviour\Localization\LocalizationService.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_IEnumerator_1_KeyValuePair_2_Type_Int32_Bi.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_ETTask_1_ILTypeInstance_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_TimeInfo_Binding.cs" />
@@ -264,6 +268,7 @@
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_ETAsyncTaskMethodBuilder_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_Events_UnityAction_1_Int32_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_ThreadSynchronizationContext_Binding.cs" />
+     <Compile Include="Assets\Mono\Helper\IStaticFunc.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_ILog_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_ETTask_1_Object_Array_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_Dictionary_2_Int32_SortedDictionary_2_Int3.cs" />
@@ -285,6 +290,7 @@
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_List_1_String_Binding.cs" />
      <Compile Include="Assets\Mono\Module\Mongo\BsonIgnoreIfDefaultAttribute.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_Dictionary_2_Int64_ILTypeInstance_Binding.cs" />
+     <Compile Include="Assets\Mono\ILRuntime\ILStaticFunc.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_Dictionary_2_Type_Int32_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Type_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_Dictionary_2_Type_Queue_1_ILTypeInstance_B.cs" />
@@ -308,6 +314,7 @@
      <Compile Include="Assets\Mono\Module\NetworkTCP\TService.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_ListComponent_1_Vector3_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_Stack_1_Int32_Binding.cs" />
+     <Compile Include="Assets\Mono\Helper\MonoStaticFunc.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_KeyValuePair_2_String_Object_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_List_1_Int32_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\ET_TimeHelper_Binding.cs" />
@@ -345,13 +352,6 @@
      <Compile Include="Assets\Mono\ILRuntime\Generate\System_IO_MemoryStream_Binding.cs" />
      <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_Animator_Binding.cs" />
      <Compile Include="Assets\Mono\Define.cs" />
-     <Compile Include="Assets\Mono\Helper\IStaticFunc.cs" />
-     <Compile Include="Assets\Mono\Helper\MonoStaticFunc.cs" />
-     <Compile Include="Assets\Mono\MonoBehaviour\Localization\LanguageInfo.cs" />
-     <Compile Include="Assets\Mono\MonoBehaviour\Localization\LocalizationService.cs" />
-     <Compile Include="Assets\Mono\ILRuntime\ILStaticFunc.cs" />
-     <Compile Include="Assets\Mono\MonoBehaviour\Localization\LocalizedText.cs" />
-     <Compile Include="Assets\Mono\ILRuntime\Generate\UnityEngine_PlayerPrefs_Binding.cs" />
      <None Include="Assets\Mono\Unity.Mono.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
